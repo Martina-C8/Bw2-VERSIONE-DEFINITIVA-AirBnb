@@ -1,0 +1,20 @@
+
+header .carousel p{
+    
+    font-size: small;
+    margin-top: 0.4rem;
+    
+}
+
+header .carousel img{
+ width: 20px;
+ height: auto;
+ opacity: 0.5;
+ 
+}
+
+@media screen and (max-width:576px) {
+    .carousel-inner {
+        margin-left: 15%;
+    }
+}
