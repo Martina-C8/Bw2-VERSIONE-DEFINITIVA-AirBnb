@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 110px;
+    height: 60px;
+}
+.nav-link:hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#search > div > div.col-8 > div {
+    border: 1px solid rgba(0, 0, 0, 0.169);
+    border-radius: 30px;
+    height:fit-content;
+}
+
+#search > div > div.col-8 > div > div:nth-child(1):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(2):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(3):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(4):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+
+#search > div > div.col-8 > div > div.col-4.d-flex.justify-content-around > div:nth-child(2) > button {
+    border: 1px solid rgba(0, 0, 0, 0.169);
+    border-radius: 50px;
+    height:40px;
+    width: 60px;
+    background-color: #E21C5D;
+    color: #F7F7F7;
+
+}
