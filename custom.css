@@ -1,6 +1,22 @@
-main section:first-child img {
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#activeApartment img, #pastExperiences img {
     border-radius: 15px;
 }
+
+
 
 
 .carousel-indicators [data-bs-target] {
@@ -9,6 +25,9 @@ main section:first-child img {
     border-radius: 50%;
 }
 
+.carousel.inner{
+    border-radius: 15px;
+}
 
 .card-button {
     position: absolute;
@@ -29,7 +48,7 @@ main section:first-child img {
     top: 10px;
     right: 10px;
     z-index: 999;
-    padding: 6px;
+    padding: 8px;
     display: flex;
     transition: transform .3s;
 }
