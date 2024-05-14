@@ -7,20 +7,182 @@
     <title>Clone AirBnb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/custom.css">
+    <link rel="stylesheet" href="./custom.css">
 </head>
+
+<body>
+    <header>
+        <!-- Navbar per schermi piccoli -->
+    <nav class="navbar navbar-expand-sm bg-body navbar-dark d-block d-sm-none">
+      <!-- Brand -->
+    
+      <!-- Toggler/collapsibe Button -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    
+      <!-- Navbar links -->
+      <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="row">
+        <div class="col-3 nav-item ">
+          <!--lasciare vuoto-->
+        </div>
+        <div class="col-6 nav-item ">
+          <!--inserire tutto qui-->
+          <div class="row">
+            <div class="col-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            </div>
+            <div class="col-8">
+              <p>Dove si va?</p>
+              <p>Ovunque - Qualunque settimana - Aggiungi ospiti </p>
+            </div>
+          </div>
+          
+          
+      </div>
+      <div class="col-3 nav-item">
+        <!--lasciare vuoto-->
+      </div>
+      </div>
+    </nav>
+    <!--Fine navbar per schermi piccoli-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body d-none d-md-block">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-4">
+                <!-- Contenuto per la prima colonna -->
+                <a class="navbar-brand" href="#"><img id="logo" src="/assets/logo-pink.png" alt=""></a>
+              </div>
+              <div class="col-4 text-center mt-2 d-none d-lg-block">
+                <!-- Contenuto per la seconda colonna -->
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Soggiorni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Esperienze</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Esperienze online</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4 text-right">
+                <!-- Contenuto per la terza colonna -->
+                <ul class="navbar-nav mr-auto mt-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Affitta con AirBnb</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                    </svg></a>
+                  </li>
+                  <div class="btn-group">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <!--Si chiama justify e l'ho presa su Bootstrap icons-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Registrati</a></li>
+                      <li><a class="dropdown-item" href="#">Accedi</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                      <li><a class="dropdown-item" href="#">Affitta con AirBnb</a></li>
+                      <li><a class="dropdown-item" href="#">Centro Assistenza</a></li>
+    
+                    </ul>
+                  </div>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        </div>
+    
+        <div class="container d-none d-sm-block" id="search">
+          <div class="row">
+            <div class="col-2">
+              <!--da lasciare vuoto-->
+            </div>
+            <div class="col-8">
+              <!--inserire tutto-->
+              <div class="row">
+                <div class="col-4">
+                  <p class="mt-2 m-1">Dove</p>
+                  <p class="mt-2 m-1">Cerca destinazioni</p>
+                </div>
+                <div class="col-2">
+                  <p class="mt-2 m-1">Check-in</p>
+                  <p class="mt-2 m-1">Aggiungi date</p>
+                </div>
+                <div class="col-2">
+                  <p class="mt-2 m-1">Check-out</p>
+                  <p class="mt-2 m-1">Aggiungi date</p>
+                </div>
+                <div class="col-4 d-flex justify-content-around ">
+                  <div>
+                  <p class="mt-2 m-1">Chi</p>
+                  <p class="mt-2 m-1">Aggiungi ospiti</p>
+                  </div>
+                  <div>              
+                    <button class="mt-3">
+                    <img src="/assets/search.svg" alt="">
+                  </button>
+                </div>
+                </div>
+                
+              </div>
+    
+            </div>
+            <div class="col-2">
+              <!--da lasciare vuoto-->
+      </div>
+          </div>
+        </div>
+    </header>
+
 
 <body>
     <main>
         <section class="container mt-5" id="activeApartment">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 gy-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
                     <div id="carouselActiveApartment" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselActiveApartment" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselActiveApartment" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="icon-card">
@@ -33,24 +195,58 @@
                                 </svg>
                             </div>
                             <div class="carousel-item active">
-                                <img src="/assets/2.webp" class="img-fluid" alt="location 2">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/3.webp" class="img-fluid" alt="location 3">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
                             </div>
                         </div>
                         <button class="card-button">Attivo</button>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselActiveApartment"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselActiveApartment"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </button>
+                        <div class="slider-button-prev" data-bs-target="#carouselActiveApartment" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselActiveApartment" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Vivi come la star di Bollywood
+                        </h2>
+                        <p>
+                            Host: Janhvi Kapoor
+                        </p>
+                        <span>
+                            0€ per ospite
+                        </span>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 gy-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
                     <div id="carouselActiveApartment2" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselActiveApartment2" data-bs-slide-to="0"
@@ -59,6 +255,10 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselActiveApartment2" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment2" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment2" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="icon-card">
@@ -71,13 +271,19 @@
                                 </svg>
                             </div>
                             <div class="carousel-item active">
-                                <img src="/assets/1.webp" class="img-fluid" alt="location 2">
+                                <img src="./assets/2.webp" class="img-fluid" alt="location 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/3.webp" class="img-fluid" alt="location 3">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/4.webp" class="img-fluid" alt="location 3">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
                             </div>
                         </div>
                         <button class="card-button">Attivo</button>
@@ -93,23 +299,83 @@
                                 </g>
                             </svg>
                         </div>
-                        <!-- <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselActiveApartment2" data-bs-slide="prev">
-                            <div class="slider-button">
-                                <svg version="1.1" id="Layer_1" width="13" height="13"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                    xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
-                                        </g>
-                                    </g>
+                        <div class="slider-button-next" data-bs-target="#carouselActiveApartment2" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div> 
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Soggiorna nella casa di Purple Rain
+                        </h2>
+                        <p>
+                            Host: Wendy e Lisa
+                        </p>
+                        <span>
+                            Disponibile da Agosto
+                        </span>
+                    </div>   
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselActiveApartment3" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselActiveApartment3" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment3" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment3" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment3" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment3" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
                                 </svg>
                             </div>
-                        </button> -->
-                        <div class="slider-button-next" data-bs-target="#carouselActiveApartment2" data-bs-slide="next">
+                            <div class="carousel-item active">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselActiveApartment3" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselActiveApartment3" data-bs-slide="next">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
                                 style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
@@ -120,6 +386,404 @@
                             </svg>
                         </div>
                     </div>
+                    <div class="mt-3">
+                        <h2>
+                            In salotto con Doja
+                        </h2>
+                        <p>
+                            Host: Doja Cat
+                        </p>
+                        <span>
+                            Disponibile da Ottobre
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselActiveApartment4" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselActiveApartment4" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment4" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment4" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment4" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselActiveApartment4" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselActiveApartment4" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselActiveApartment4" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>                        
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Soggiorna nella X-Mansion
+                        </h2>
+                        <p>
+                            Host: Jubilee
+                        </p>
+                        <span>
+                            Non disponbile
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5 mb-5" id="pastExperiences">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselPastExperiences" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPastExperiences" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselPastExperiences" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselPastExperiences" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Passa la notte nel museo Ferrari
+                        </h2>
+                        <p>
+                            Host: Marc Genè
+                        </p>
+                        <span>
+                            Non disponibile
+                        </span>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselPastExperiences2" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPastExperiences2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences2" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences2" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselPastExperiences2" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselPastExperiences2" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>                        
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            La Palude di Shrek
+                        </h2>
+                        <p>
+                            Host: Wendy e Lisa
+                        </p>
+                        <span>
+                            Disponibile da Agosto
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselPastExperiences3" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPastExperiences3" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences3" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences3" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences3" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences3" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselPastExperiences3" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselPastExperiences3" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Soggiorna nella casa di Purple Rain
+                        </h2>
+                        <p>
+                            Host: Wendy e Lisa
+                        </p>
+                        <span>
+                            Disponibile da Agosto
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 gy-3">
+                    <div id="carouselPastExperiences4" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPastExperiences4" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences4" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences4" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences4" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPastExperiences4" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="icon-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-upload" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/2.webp" class="img-fluid" alt="location 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/4.webp" class="img-fluid" alt="location 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/5.webp" class="img-fluid" alt="location 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/3.webp" class="img-fluid" alt="location 5">
+                            </div>
+                        </div>
+                        <button class="card-button">Attivo</button>
+                        <div class="slider-button-prev" data-bs-target="#carouselPastExperiences4" data-bs-slide="prev">
+                            <svg version="1.1" id="Layer_1" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M386.033,495.228L146.806,255.998L386.033,16.771c3.838-3.838,3.838-10.055,0-13.893c-3.838-3.838-10.055-3.838-13.893,0 L125.967,249.051c-3.838,3.838-3.838,10.055,0,13.893L372.14,509.122c1.919,1.919,4.433,2.878,6.946,2.878s5.028-0.96,6.946-2.879 C389.871,505.284,389.871,499.066,386.033,495.228z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next" data-bs-target="#carouselPastExperiences4" data-bs-slide="next">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                                style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z " />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h2>
+                            Natale a casa McCallister
+                        </h2>
+                        <p>
+                            Host: Buzz
+                        </p>
+                        <span>
+                            Non disponibile
+                        </span>
+                    </div>
+
                 </div>
             </div>
         </section>

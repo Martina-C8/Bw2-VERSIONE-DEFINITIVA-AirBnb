@@ -1,6 +1,76 @@
-main section:first-child img {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 110px;
+    height: 60px;
+}
+.nav-link:hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+#search > div > div.col-8 > div {
+    border: 1px solid rgba(0, 0, 0, 0.169);
+    border-radius: 30px;
+    height:fit-content;
+}
+
+#search > div > div.col-8 > div > div:nth-child(1):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(2):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(3):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+#search > div > div.col-8 > div > div:nth-child(4):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+
+#search > div > div.col-8 > div > div.col-4.d-flex.justify-content-around > div:nth-child(2) > button {
+    border: 1px solid rgba(0, 0, 0, 0.169);
+    border-radius: 50px;
+    height:40px;
+    width: 60px;
+    background-color: #E21C5D;
+    color: #F7F7F7;
+
+=======
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#activeApartment img, #pastExperiences img {
     border-radius: 15px;
 }
+
+
 
 
 .carousel-indicators [data-bs-target] {
@@ -9,6 +79,9 @@ main section:first-child img {
     border-radius: 50%;
 }
 
+.carousel.inner{
+    border-radius: 15px;
+}
 
 .card-button {
     position: absolute;
@@ -29,7 +102,7 @@ main section:first-child img {
     top: 10px;
     right: 10px;
     z-index: 999;
-    padding: 6px;
+    padding: 8px;
     display: flex;
     transition: transform .3s;
 }
@@ -71,4 +144,5 @@ main section:first-child img {
     left: 10px;
     top: 50%;
     cursor: pointer;
+
 }
