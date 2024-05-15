@@ -38,10 +38,16 @@ header .carousel .col-6:hover img, .col-6:hover p {
 }
 
 header .carousel .col-6:hover{
+    
     cursor: pointer;
     border-bottom: 2px solid rgb(214, 214, 214);
 }
 
 header .carousel-item {
     transition: transform 1s ease-in-out;
+}
+
+.carousel-control-next {
+    margin-right: 6rem;
+    width: 60px;
 }
