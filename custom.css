@@ -10,6 +10,7 @@ header .carousel p{
     
 }
 
+
 header .carousel img{
  width: 20px;
  height: auto;
@@ -26,6 +27,7 @@ transform: scale(1.1);
 
 header .carousel .col-6 img, .row p {
     transition: opacity 0.3s ease;
+    
 }
 
 
@@ -37,8 +39,9 @@ header .carousel .col-6:hover img, .col-6:hover p {
 
 header .carousel .col-6:hover{
     cursor: pointer;
-   
-    border-bottom: solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
 }
 
-
+header .carousel-item {
+    transition: transform 1s ease-in-out;
+}
