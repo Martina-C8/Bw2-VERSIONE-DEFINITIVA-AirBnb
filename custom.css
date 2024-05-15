@@ -190,7 +190,16 @@ header .carousel-item {
     transition: transform 1s ease-in-out;
 }
 
-.carousel-control-next {
-    margin-right: 6rem;
-    width: 60px;
+.carousel-control-next{
+    margin-right: -6%;
+}
+
+.carousel-control-prev{
+    
+    margin-left: -6%;
+}
+
+header .carousel-inner{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
