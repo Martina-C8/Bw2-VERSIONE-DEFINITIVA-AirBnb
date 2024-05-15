@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,49 +8,52 @@
     width: 110px;
     height: 60px;
 }
+
 .nav-link:hover {
     color: black;
     background-color: #F7F7F7;
     border-radius: 20px;
-    /* transition: all 0.3s ease-in-out; */
 }
 
-#search > div > div.col-8 > div {
+#search>div>div.col-8>div {
     border: 1px solid rgba(0, 0, 0, 0.169);
     border-radius: 30px;
-    height:fit-content;
+    height: fit-content;
 }
 
-#search > div > div.col-8 > div > div:nth-child(1):hover {
-    color: black;
-    background-color: #F7F7F7;
-    border-radius: 30px;
-}
-#search > div > div.col-8 > div > div:nth-child(2):hover {
-    color: black;
-    background-color: #F7F7F7;
-    border-radius: 30px;
-}
-#search > div > div.col-8 > div > div:nth-child(3):hover {
-    color: black;
-    background-color: #F7F7F7;
-    border-radius: 30px;
-}
-#search > div > div.col-8 > div > div:nth-child(4):hover {
+#search>div>div.col-8>div>div:nth-child(1):hover {
     color: black;
     background-color: #F7F7F7;
     border-radius: 30px;
 }
 
-#search > div > div.col-8 > div > div.col-4.d-flex.justify-content-around > div:nth-child(2) > button {
+#search>div>div.col-8>div>div:nth-child(2):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+
+#search>div>div.col-8>div>div:nth-child(3):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+
+#search>div>div.col-8>div>div:nth-child(4):hover {
+    color: black;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+}
+
+#search>div>div.col-8>div>div.col-4.d-flex.justify-content-around>div:nth-child(2)>button {
     border: 1px solid rgba(0, 0, 0, 0.169);
     border-radius: 50px;
-    height:40px;
+    height: 40px;
     width: 60px;
     background-color: #E21C5D;
     color: #F7F7F7;
+}
 
-=======
 body {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
@@ -66,12 +68,10 @@ p {
     margin: 0;
 }
 
-#activeApartment img, #pastExperiences img {
+#activeApartment img,
+#pastExperiences img {
     border-radius: 15px;
 }
-
-
-
 
 .carousel-indicators [data-bs-target] {
     width: 5px;
@@ -79,7 +79,7 @@ p {
     border-radius: 50%;
 }
 
-.carousel.inner{
+.carousel.inner {
     border-radius: 15px;
 }
 
@@ -94,7 +94,6 @@ p {
     font-size: 14px;
 }
 
-
 .icon-card {
     background-color: #E3D8D1;
     border-radius: 50%;
@@ -102,7 +101,7 @@ p {
     top: 10px;
     right: 10px;
     z-index: 999;
-    padding: 8px;
+    padding: 9px;
     display: flex;
     transition: transform .3s;
 }
@@ -131,8 +130,9 @@ p {
     right: 10px;
     top: 50%;
     cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0;
 }
-
 
 .slider-button-prev {
     background-color: #E3D8D1;
@@ -144,5 +144,83 @@ p {
     left: 10px;
     top: 50%;
     cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
 
+main section .carousel:hover .slider-button-next {
+    opacity: 1;
+}
+
+main section .carousel:hover .slider-button-prev {
+    opacity: 1;
+}
+
+header .carousel p {
+
+    font-size: small;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+
+
+}
+
+
+header .carousel img {
+    width: 20px;
+    height: auto;
+    opacity: 0.5;
+    margin-left: 45%;
+
+}
+
+header .carousel-control-next:hover,
+.carousel-control-prev:hover {
+    transform: scale(1.1);
+
+}
+
+
+header .carousel .col-6 img,
+.row p {
+    transition: opacity 0.3s ease;
+
+}
+
+
+header .carousel .col-6:hover img,
+.col-6:hover p {
+    cursor: pointer;
+    opacity: 1.3;
+
+}
+
+header .carousel .col-6:hover {
+
+    cursor: pointer;
+    border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+header .carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-control-next {
+    margin-right: -6%;
+}
+
+.carousel-control-prev {
+
+    margin-left: -6%;
+}
+
+header .carousel-inner {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.row {
+    overflow: hidden;
 }
