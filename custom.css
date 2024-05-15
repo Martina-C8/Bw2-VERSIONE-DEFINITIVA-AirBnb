@@ -1,0 +1,44 @@
+ul > li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.section   a{
+    text-decoration: none;
+    
+}
+
+.section a:hover{
+    background-color: aqua;
+}
+
+@media(max-width:720px){ /*prova schermi small con classe colun*/
+    .fondoPagina{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+}
+}
+
+
+
+@media(max-width:720px){ /*prova schermi small con classe media*/
+    .media li a{
+     font-size: 14px;
+}
+    .media1 li{   /*prova schermi small con classe media*/
+        font-size: 15px;
+    }
+    .media0 li a{
+        font-size: 18px;
+        
+        
+    }
+}   
+        
+       
+        
+       
