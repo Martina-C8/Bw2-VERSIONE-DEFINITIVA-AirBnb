@@ -306,6 +306,43 @@ header .carousel-inner {
 /*.row {
     overflow: hidden;
 }*/
+/*inizia css pag3*/
+.sectionM .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionM .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sectionM .col-lg-2,
+.sectionM .col-md-4,
+.sectionM .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionM .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 20em; /* Imposta l'altezza minima desiderata */
+}
+
+.sectionM .card-img-top {
+    object-fit: cover;
+}
+
+.sectionM .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
 
 footer ul > li{
