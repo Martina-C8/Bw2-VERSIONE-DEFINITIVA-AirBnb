@@ -303,9 +303,11 @@ header .carousel-inner {
     margin-bottom: 2rem;
 }
 
-.row {
+/* .row {
     overflow: hidden;
-}
+} */
+
+
 /*inizia css pag3*/
 .sectionM .container {
     display: flex;
