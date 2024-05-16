@@ -303,14 +303,14 @@ header .carousel-inner {
     margin-bottom: 2rem;
 }
 
-.row {
-    overflow: hidden;
-}
+/*.row {
+    overflow: hidden;*/
+
 
 
 footer ul > li{
-    list-style: none;
-    font-size: 1.5rem;
+    list-style-type: none;
+    font-size: 1rem;
 }
 
 footer .section   a{
