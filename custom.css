@@ -189,6 +189,9 @@ header .carousel .col-6 img,
 
 }
 
+header .carousel .container{
+    height: 4rem;
+}
 
 header .carousel .col-6:hover img,
 .col-6:hover p {
