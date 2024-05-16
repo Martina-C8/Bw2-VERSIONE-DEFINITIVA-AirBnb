@@ -303,9 +303,9 @@ header .carousel-inner {
     margin-bottom: 2rem;
 }
 
-/*.row {
+.row {
     overflow: hidden;
-}*/
+}
 /*inizia css pag3*/
 .sectionM .container {
     display: flex;
@@ -346,8 +346,8 @@ header .carousel-inner {
 
 
 footer ul > li{
-    list-style: none;
-    font-size: 1.5rem;
+    list-style-type: none;
+    font-size: 1rem;
 }
 
 footer .section   a{
