@@ -335,6 +335,7 @@ header .carousel-inner {
 
 .sectionM .card-img-top {
     object-fit: cover;
+    height: 50%;
 }
 
 .sectionM .card-body {
@@ -342,6 +343,19 @@ header .carousel-inner {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+}
+
+.bottoncino {
+    border-radius: 30px;
+    padding: 0.2em 1em;
+    border: 1px solid black;
+    font-size: 14px;
+    background-color: white;
+}
+
+.bottoncino:hover {
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
 }
 
 
