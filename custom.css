@@ -79,11 +79,9 @@ body > div.section1 > div > div > div:nth-child(1) > img {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
-    margin: 0 auto;
-    position: absolute;
-    top: 20%px;
-    right: 23%;
+    max-width: 300px; 
+    
+    
   }
   body > div.section1 > div {
     position:static;
@@ -387,4 +385,15 @@ footer .section a:hover{
         
     }
 }   
+
+@media(min-width:768px){
+    .calendar{
+        display:flex;
+        
+    }
+    .calendar2{
+        margin-left: 15rem;
+    }
+}
+
 
