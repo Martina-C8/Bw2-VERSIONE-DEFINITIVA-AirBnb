@@ -396,7 +396,11 @@ footer .section a:hover{
     }
 }
 
-
+@media(max-width:768px){
+    .calendar2{
+        margin-left: 4rem;
+    }
+}
 
 
 @media (min-width:760px) and (max-width:990px) {    /*prova schermi tablet class provaNav per bottons nav*/
