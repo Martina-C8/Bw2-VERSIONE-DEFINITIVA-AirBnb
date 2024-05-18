@@ -390,6 +390,12 @@ footer .section a:hover{
     text-decoration: underline;
 }
 
+.carousel-control-next{
+   
+    width: 4rem;
+    margin-right: 5rem;
+}
+
 @media(max-width:720px){ /*prova schermi small con classe colun*/
     .fondoPagina{
         display: flex;
