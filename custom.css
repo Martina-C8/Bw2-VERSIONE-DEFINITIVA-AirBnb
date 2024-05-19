@@ -456,6 +456,9 @@ footer .section a:hover{
         width: 30px;
         background-color:  red;
     }
+    .navElement {
+        font-size: 10px;
+    }
 }
 
 .navbar .smallScreen{
