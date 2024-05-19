@@ -73,6 +73,10 @@ body > div.section1 > div > div > div:nth-child(1) > img {
   .img12 {
     border-radius: 0px 0px 20px 0px;
   }
+
+.nascondi::after {
+    display: none;
+}
   
 
 /*css applicato a booking card Martina*/
